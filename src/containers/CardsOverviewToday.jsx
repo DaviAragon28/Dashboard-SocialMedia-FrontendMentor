@@ -9,7 +9,7 @@ import iconYoutube from '../assets/images/icon-youtube.svg'
 
 export const CardsOverviewToday = () => {
   return (
-    <section className=' flex flex-col gap-5'>
+    <section className=' flex flex-col gap-5 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
         <CardOverviewToday
             title='Page Views'
             amount='87'

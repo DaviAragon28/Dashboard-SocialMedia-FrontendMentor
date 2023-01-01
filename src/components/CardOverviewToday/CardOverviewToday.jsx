@@ -7,7 +7,7 @@ import IconUp from '../../assets/images/icon-up.svg'
 export const CardOverviewToday = ({ icon, title, amount, porcent, up = true }) => {
     const { modeTheme } = useContext(AppContext)
     return (
-        <div className={` transition-colors flex flex-col px-10 justify-around items-center h-32 rounded-md ${modeTheme ? 'bg-darkDesaturatedBlue' : 'bg-lightGrayishBlueCardBG'}`}>
+        <div className={` transition-colors flex flex-col px-10 cursor-pointer justify-around items-center h-32 rounded-md ${modeTheme ? 'hover:brightness-125 bg-darkDesaturatedBlue' : 'hover:brightness-90 bg-lightGrayishBlueCardBG'} lg:h-36   `}>
             <div className='flex justify-between w-full'>
                 <p className='text-desaturatedBlue font-bold'>{title}</p>
                 <img className='object-contain' src={icon} alt="" />
